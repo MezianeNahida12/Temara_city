@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temara - Guide Touristique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Temara City</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#accueil" class="active">Accueil</a></li>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#lieux">Lieux à visiter</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue à Temara</h1>
+            <p>Découvrez la beauté de cette ville côtière entre Rabat et Casablanca</p>
+            <a href="#presentation" class="btn">Explorer</a>
+        </div>
+    </section>
+
+    <!-- Présentation -->
+    <section id="presentation" class="section">
+        <h2 class="section-title">Présentation de Temara</h2>
+        <div class="presentation-content">
+            <div class="presentation-text">
+                <h3>Une ville au riche patrimoine</h3>
+                <p>Temara est une ville marocaine située sur la côte atlantique, entre Rabat (à 10 km) et Casablanca. Elle est connue pour ses belles plages, son patrimoine historique et sa qualité de vie.</p>
+                
+                <div class="info-cards">
+                    <div class="info-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Population</h4>
+                        <p>400,000+ habitants</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h4>Fondation</h4>
+                        <p>XIIe siècle</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-sun"></i>
+                        <h4>Climat</h4>
+                        <p>Méditerranéen tempéré</p>
+                    </div>
+                </div>
+            </div>
+            <div class="presentation-image">
+                <img src="images/temara-photo.jpg" alt="Temara">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lieux à visiter -->
+    <section id="lieux" class="section bg-light">
+        <h2 class="section-title">Lieux à Visiter</h2>
+        <div class="lieux-grid">
+            <div class="lieu-card">
+                <div class="lieu-image" style="background-image: url('images/plage-temara.jpg');"></div>
+                <div class="lieu-content">
+                    <h3>Plage de Temara</h3>
+                    <p>Une magnifique plage de sable fin idéale pour la baignade et les sports nautiques.</p>
+                    <div class="lieu-info">
+                        <span><i class="fas fa-clock"></i> Ouvert toute la journée</span>
+                        <span><i class="fas fa-tag"></i> Entrée gratuite</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lieu-card">
+                <div class="lieu-image" style="background-image: url('images/Port.jpg');"></div>
+                <div class="lieu-content">
+                    <h3>Port de Temara</h3>
+                    <p>Port de pêche traditionnel où vous pouvez acheter du poisson frais quotidiennement.</p>
+                    <div class="lieu-info">
+                        <span><i class="fas fa-clock"></i> 6h - 20h</span>
+                        <span><i class="fas fa-tag"></i> Visite gratuite</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lieu-card">
+                <div class="lieu-image" style="background-image: url('images/Mamora.jpg');"></div>
+                <div class="lieu-content">
+                    <h3>Forêt de la Mamora</h3>
+                    <p>Une des plus grandes forêts de chênes-lièges au monde, parfaite pour les promenades.</p>
+                    <div class="lieu-info">
+                        <span><i class="fas fa-clock"></i> 8h - 18h</span>
+                        <span><i class="fas fa-tag"></i> Entrée gratuite</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lieu-card">
+                <div class="lieu-image" style="background-image: url('images/Souk.jpg');"></div>
+                <div class="lieu-content">
+                    <h3>Souk Traditionnel</h3>
+                    <p>Marché local où vous trouverez produits artisanaux, épices et vêtements traditionnels.</p>
+                    <div class="lieu-info">
+                        <span><i class="fas fa-clock"></i> 9h - 19h</span>
+                        <span><i class="fas fa-tag"></i> Marchandage conseillé</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carte Interactive -->
+    <section id="carte" class="section">
+        <h2 class="section-title">Carte de Temara</h2>
+        <div class="carte-container">
+            <div class="carte-info">
+                <h3>Localisation</h3>
+                <p>Temara se situe à environ 10 km au sud de Rabat, sur la côte atlantique.</p>
+                <ul class="localisation-list">
+                    <li><i class="fas fa-map-pin"></i> Distance de Rabat : 10 km</li>
+                    <li><i class="fas fa-map-pin"></i> Distance de Casablanca : 90 km</li>
+                    <li><i class="fas fa-map-pin"></i> Distance de Salé : 15 km</li>
+                    <li><i class="fas fa-map-pin"></i> Coordonnées : 33.9259° N, 6.9156° W</li>
+                </ul>
+            </div>
+            <div class="carte-image">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section bg-light">
+        <h2 class="section-title">Contact et Informations</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Informations pratiques</h3>
+                <div class="contact-item">
+                    <i class="fas fa-info-circle"></i>
+                    <div>
+                        <h4>Meilleure période pour visiter</h4>
+                        <p>Avril à Octobre</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-language"></i>
+                    <div>
+                        <h4>Langues parlées</h4>
+                        <p>Arabe, Français</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <div>
+                        <h4>Monnaie</h4>
+                        <p>Dirham marocain (MAD)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Posez une question</h3>
+                <form id="contactForm">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Temara Guide</h3>
+                <p>Votre guide touristique pour découvrir Temara</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#lieux">Lieux à visiter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Guide Touristique de Temara. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Leaflet pour la carte -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Initialisation de la carte
+        function initMap() {
+            const map = L.map('map').setView([33.9259, -6.9156], 12);
+            
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+            
+            // Ajouter des marqueurs pour Temara
+            const locations = [
+                {
+                    name: "Plage de Temara",
+                    coords: [33.9333, -6.9500],
+                    description: "Belle plage de sable fin"
+                },
+                {
+                    name: "Port de Temara",
+                    coords: [33.9380, -6.9550],
+                    description: "Port de pêche traditionnel"
+                },
+                {
+                    name: "Centre-ville",
+                    coords: [33.9259, -6.9156],
+                    description: "Centre administratif et commercial"
+                },
+                {
+                    name: "Forêt de la Mamora",
+                    coords: [33.9500, -6.8500],
+                    description: "Forêt de chênes-lièges"
+                }
+            ];
+            
+            locations.forEach(location => {
+                L.marker(location.coords)
+                    .addTo(map)
+                    .bindPopup(`<strong>${location.name}</strong><br>${location.description}`);
+            });
+        }
+        
+        // Initialiser la carte quand la page est chargée
+        document.addEventListener('DOMContentLoaded', initMap);
+    </script>
+</body>
+</html>
